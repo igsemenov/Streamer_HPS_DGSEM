@@ -2,7 +2,6 @@
 " pycode_int_2 "
 ###############################################################################
 import numpy as np
-import matplotlib.pyplot as plt 
 import pylib_lgn as lg
 from scipy.special import jv
 ###############################################################################
