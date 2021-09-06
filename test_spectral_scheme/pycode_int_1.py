@@ -2,7 +2,6 @@
 " pycode_int_1 "
 ###############################################################################
 import numpy as np
-import matplotlib.pyplot as plt 
 import pylib_lgn as lg
 ###############################################################################
 def test_solve(n):
