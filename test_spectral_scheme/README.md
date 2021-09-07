@@ -16,6 +16,6 @@ This script implements the SCM scheme for solving Eq. (B.1) at alpha=0.
 ## pycode_scm_a=1.py
 This script implements the SCM scheme for solving Eq. (B.1) at alpha=1.
 ## pylib_lgn.py
-This module contains basic utilities required for implementing the IRM scheme.
+This module contains the basic utilities required for implementing the IRM scheme.
 ## pylib_chb.py
-This module contains basic utilities required for implementing the SCM scheme.
+This module contains the basic utilities required for implementing the SCM scheme.
