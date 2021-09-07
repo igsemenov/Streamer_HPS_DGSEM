@@ -1,2 +1,2 @@
-# Streamer_HPS_DGSEM
+# Overview
 Implementation of the spectral element method for simulating streamer discharges in low-temperature atmospheric-pressure plasmas.
