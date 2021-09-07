@@ -7,15 +7,15 @@ Function: test_solve(n)
 
     Implements the IMR scheme for solving Eq. (B.1) at alpha=0
 
-Input:
+Inputs:
     
     n: the number of Gauss nodes per direction
 
-Output:
+Returns:
 
     err: error in the solution
     err_x: error in the derivative with respect to x
-    err_y: error in the derivetive with respect to y
+    err_y: error in the derivative with respect to y
 
 Notes: the error is defined using the L-infinity norm
 
@@ -68,6 +68,6 @@ def test_solve(n):
     err_x=np.amax(abs(gx-2.*np.cos(2.*x+2.*y)))
     err_y=np.amax(abs(gy-2.*np.cos(2.*x+2.*y)))
 
-    return n,err,err_x,err_y
+    return err,err_x,err_y
 
 ###############################################################################
