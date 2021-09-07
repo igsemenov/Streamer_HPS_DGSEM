@@ -1,8 +1,25 @@
 ###############################################################################
-" pycode_int_a=0 "
-###############################################################################
 import numpy as np
 import pylib_lgn as lg
+###############################################################################
+"""
+Function: test_solve(n)
+
+    Implements the IMR scheme for solving Eq. (B.1) at alpha=0
+
+Input:
+    
+    n: the number of Gauss nodes per direction
+
+Output:
+
+    err: error in the solution
+    err_x: error in the derivative with respect to x
+    err_y: error in the derivetive with respect to y
+
+Notes: the error is defined using the L-infinity norm
+
+"""
 ###############################################################################
 def test_solve(n):
 
