@@ -2,41 +2,61 @@
 " pycode_dgs_flux "
 ###############################################################################
 import numpy as np
+import matplotlib.pyplot as plt
 #------------------------------------------------------------------------------
 import pylib_lgn as lg
 import pylib_dgs as dg
 ###############################################################################
 """
 
+This script implements the DGSEM scheme for solving a one-dimensional 
+advection-diffusion equation (equation D.1 in the Appendix D).
+
+The equation is solved on the interval [-pi,pi], the initial condition is
+given as sin(x), the periodic boundary conditions are used at t>0.
+
 """
 ###############################################################################
+"""
+Input parameters:
 
+    k: the number of finite elements
+    n: the number of Gauss nodes per element
+
+    a: the advection velocity
+    nu: the diffusion coefficient  
+
+    t: is the time step
+    m: is the number of time steps
+
+"""
+
+k=64
 n=6
-m=64
 
-a_=1.0
-b_=0.0
+a=-1.0
+nu=0.0
 
 t=2.5e-5
-k=20000
+m=20000
 
 ###############################################################################
 
 lgn=lg.lgn1d(n)
 
 dgs=lg.dgs1d_lgn(lgn)
-nod=lg.nod1d(0.,np.pi,m,lgn)
+nod=lg.nod1d(0.,np.pi,k,lgn)
 
 fld=dg.dgs_box1d(nod)
 
 fld.f[0]=np.sin(nod.x)
 
-fld.ax.fill(a_)
-fld.bx.fill(b_*fld.g)
+fld.ax.fill(a)
+fld.bx.fill(nu*fld.g)
 
 ###############################################################################
 
-for j in range(k):
+for j in range(m):
 
     fld.delta(0,t,dgs)
     fld.f[1]=fld.f[0]+fld.df
@@ -48,15 +68,29 @@ for j in range(k):
     fld.f[0]=(fld.f[0]+2.*fld.f[1]+2.*fld.df)/3.
 
 ###############################################################################
+"""
 
-t_=t*k
-r=np.sin(nod.x-a_*t_)*np.exp(-b_*t_)
+Output values:
 
-L1,L2=fld.get_error(fld.f[0]-r,lgn)
+    L1: the L-infinity error in the solution
+    L2: the global L2 error in the solution
 
-print(L2)
+    x: 1D array that contains all discretization nodes
+    f: 1D array that contanins the solution at the discretization nodes
+    r: 1D array that contains the reference solution at the discretization nodes
 
-#err1[m]=L1
-#err2[m]=L2
+"""
+
+T=t*m
+
+L1,L2=fld.get_error(fld.f[0]-np.sin(nod.x-a*T)*np.exp(-nu*T),lgn)
+
+#------------------------------------------------------------------------------
+
+x=nod.x.T.flatten()
+
+f=fld.f[0].T.flatten()
+
+r=np.sin(x-a*T)*np.exp(-nu*T)
 
 ###############################################################################
