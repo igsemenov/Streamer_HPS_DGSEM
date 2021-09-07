@@ -6,6 +6,8 @@ In these experiments, the model Poisson equation (B.1) was solved.
 
 The computations were performed using two different methods: the spectral collocation method (SCM) and the method based on the integral reformulation of the problem (IRM).
 
+For further details see the corresponding script files.
+
 # Files overview
 ## pycode_int_a=0.py
 This script implements the IRM scheme for solving Eq. (B.1) at alpha=0.
