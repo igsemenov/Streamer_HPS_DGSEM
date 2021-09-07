@@ -20,14 +20,14 @@ given as sin(x), the periodic boundary conditions are used at t>0.
 """
 Input parameters:
 
-    k: number of finite elements
-    n: number of Gauss nodes per element
+    k: the number of finite elements
+    n: the number of Gauss nodes per element
 
-    a: advection velocity
-    nu: diffusion coefficient  
+    a: the advection velocity
+    nu: the diffusion coefficient  
 
-    t: time step
-    m: number of time steps
+    t: the time step
+    m: the number of time steps
 
 """
 
