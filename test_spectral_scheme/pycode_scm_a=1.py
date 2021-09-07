@@ -82,6 +82,6 @@ def test_solve(n):
     err_x=np.amax(abs(gx-gx_ref))
     err_y=np.amax(abs(gy-gy_ref))
 
-    return np.array([n,err,err_x,err_y])
+    return err,err_x,err_y
 
 ###############################################################################
