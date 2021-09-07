@@ -76,7 +76,7 @@ Output values:
     L2: the global L2 error in the solution
 
     x: 1D array that contains all discretization nodes
-    f: 1D array that contanins the solution at the discretization nodes
+    f: 1D array that contanins the computed solution at the discretization nodes
     r: 1D array that contains the reference solution at the discretization nodes
 
 """
