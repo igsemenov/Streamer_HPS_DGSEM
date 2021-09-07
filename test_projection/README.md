@@ -1,6 +1,5 @@
 # Introduction
-This folder contains the scripts for testing the projection procedure presented in **Section 3.5.1. The numerical flux function**.
-
+This folder contains the scripts used to test the projection procedure presented in **Section 3.5.1. The numerical flux function**.
 # Files Overview
 ## pycode_projection.py
 In particular, this script was used to obtain the results shown in **Fig. 5**.
