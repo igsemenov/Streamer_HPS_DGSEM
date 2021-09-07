@@ -4,6 +4,25 @@
 import numpy as np
 import pylib_chb as ch
 ###############################################################################
+"""
+Function: test_solve(n)
+
+    Implements the SCM scheme for solving Eq. (B.1) at alpha=0
+
+Inputs:
+    
+    n: the number of Chebyshev nodes per direction
+
+Returns:
+
+    err: error in the solution
+    err_x: error in the derivative with respect to x
+    err_y: error in the derivative with respect to y
+
+Notes: the error is defined using the L-infinity norm
+
+"""
+###############################################################################
 def test_solve(n):
 
     chb=ch.chb2d(n)
@@ -67,6 +86,6 @@ def test_solve(n):
     err_x=np.amax(abs(gx-2.*np.cos(2.*x+2.*y)))
     err_y=np.amax(abs(gy-2.*np.cos(2.*x+2.*y)))
 
-    return np.array([n,err,err_x,err_y])
+    return err,err_x,err_y
 
 ###############################################################################
