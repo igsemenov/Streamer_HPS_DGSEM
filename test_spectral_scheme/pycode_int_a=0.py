@@ -51,6 +51,6 @@ def test_solve(n):
     err_x=np.amax(abs(gx-2.*np.cos(2.*x+2.*y)))
     err_y=np.amax(abs(gy-2.*np.cos(2.*x+2.*y)))
 
-    return np.array([n,err,err_x,err_y])
+    return n,err,err_x,err_y
 
 ###############################################################################
