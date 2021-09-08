@@ -145,6 +145,4 @@ err=np.sqrt(np.sum(np.asarray(err)))
 err_x=np.sqrt(np.sum(np.asarray(err_x)))
 err_y=np.sqrt(np.sum(np.asarray(err_y)))
 
-print(err)
-
 ###############################################################################
