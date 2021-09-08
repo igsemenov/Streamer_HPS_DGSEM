@@ -112,19 +112,16 @@ for elm in hps.elm:
     c2=f-g
 
     c2x=fx-gx
-
     c2y=fy-gy
 
     c2=np.sum(lgn.I*(c2*c2),axis=0)*(elm.nod_lgn.h[0]*elm.nod_lgn.h[0])
 
     c2x=np.sum(lgn.I*(c2x*c2x),axis=0)*(elm.nod_lgn.h[0]*elm.nod_lgn.h[0])
-
     c2y=np.sum(lgn.I*(c2y*c2y),axis=0)*(elm.nod_lgn.h[0]*elm.nod_lgn.h[0])
 
     err.append(c2)
 
     err_x.append(c2x)
-
     err_y.append(c2y)
 
 #------------------------------------------------------------------------------
@@ -143,7 +140,6 @@ Output values:
 err=np.sqrt(np.sum(np.asarray(err)))
 
 err_x=np.sqrt(np.sum(np.asarray(err_x)))
-
 err_y=np.sqrt(np.sum(np.asarray(err_y)))
 
 ###############################################################################
