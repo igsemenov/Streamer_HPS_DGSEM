@@ -11,6 +11,7 @@ In particular, this folder contains the scripts used in the computations with **
 ## pycode_hps_a=0.py
 This script implements the HPS scheme for solving the Poisson equation (C.1) with alpha=0. See the script file for further details.
 ## pylib_hps.py
+This script contains the basic utilities for the HPS scheme. 
 ## pylib_psn.py
 ## pylib_dgs.py
 ## pylib_fvs.py
