@@ -12,11 +12,11 @@ Introduction:
 
     This script is used to test the DGSEM scheme.
 
-    The considered test problem is Test. 1.1.
+    The considered test problem is Test 1.1.
 
-    The computation is performed for one period.
+    The computation is performed for one period, i.e., until t=8.
 
-    Use plotelm() to plot the grid nodes
+    Use plotelm() to plot the grid nodes.
 
 """
 ###############################################################################
