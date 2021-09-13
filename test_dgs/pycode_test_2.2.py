@@ -160,7 +160,6 @@ for i in [0,1,2,3,4]:
 
     x,y=nod.getmsh()
     f=fld.getsol(0)
-    plt.contourf(x,y,f,levels=np.linspace(-1.01,1.01,41),cmap="jet")
 
     r=np.sin(nod.x+nod.y-t_)
 
