@@ -14,7 +14,7 @@ Introduction:
 
     The considered test problem is Test 2.2.
 
-    The computation is performed for one period, i.e., until  t=1.
+    The computation is performed for until  t=1.
 
     Use plotelm() to plot the grid nodes
 
