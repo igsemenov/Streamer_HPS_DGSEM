@@ -14,7 +14,7 @@ Introduction:
 
     The considered test problem is Test. 2.3.
 
-    The computation is performed until t=0.5.
+    The computation is run till t=0.5.
 
     Use plotelm() to plot the grid nodes
 
