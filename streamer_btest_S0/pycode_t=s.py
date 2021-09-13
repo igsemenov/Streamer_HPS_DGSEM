@@ -44,9 +44,9 @@ hps.psndtn(grn)
 
 tic=time.time()
 
-#for s in range(nt):
-#    print("s="+str(s+1))
-#    hps.step_dgs_fvs(dt,mt,dgs,fvs,lgn)
+for s in range(nt):
+    print("s="+str(s+1))
+    hps.step_dgs_fvs(dt,mt,dgs,fvs,lgn)
 
 toc=time.time()
 print("run time: "+str(toc-tic))
@@ -57,6 +57,6 @@ hps.step_psn(lgn)
 
 sol=hps.getsol(4,lgn,fvs)
 
-#hps.save("pydata\\time_"+str(time_moment+1))
+hps.save("pydata\\time_"+str(time_moment+1))
 
 ###############################################################################
