@@ -14,7 +14,7 @@ Introduction:
 
     The considered test problem is Test 1.3.
 
-    The computation is performed for one period, i.e., until  t=8.
+    The computation is performed for one period, i.e., run till t=8.
 
     Use plotelm() to plot the grid nodes
 
