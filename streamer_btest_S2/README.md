@@ -1,5 +1,5 @@
 # Introduction
-This folder contains the scripts used to perform the simulation **S0** described in **Section 4.1**. 
+This folder contains the scripts used to perform the simulation **S2** described in **Section 4.1**. 
 
 The scripts must be placed in the same directory. This directory must contain the folder pydata that includes the subfolders time_#, with #=0,1,2,3,4,5.
 
