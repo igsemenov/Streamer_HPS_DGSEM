@@ -50,4 +50,4 @@ In addition, the following data are provided in the instance **sol**:
 These results can be quickly visualized using the functons:
 - sol.rho() - plot the distribution of sol.Ne_axs (red) and sol.Ni_axs (blue)
 - sol.rho_log() - the same as sol.rho() but using the logarithmic scale for density.
-- -sol.field() - plot the distribution of sol.E_axs
+- sol.field() - plot the distribution of sol.E_axs
