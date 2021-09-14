@@ -8,7 +8,7 @@ The simulation steps are as follows:
 1. Run pycode_t=i.py. This script initializes the mesh and the solution at t=0.
 2. Run pycode_t=s.py sequentially with time_moment=0,...,15.
 
-At the end of the simulation, the folders pydata\time_#, with #=0,...,16, contain the simulation results corresponding to the time moments from 0. to 16. ns, respectively.
+At the end of the simulation, the folders pydata\time_#, with #=0,...,16, contain the simulation results corresponding to the time moments from 0 to 16 ns, respectively.
 
 # Retrieving the simulation results
 
