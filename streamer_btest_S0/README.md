@@ -33,9 +33,9 @@ Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output da
 
 Using the derivatives of the potential, the corresponding components of the electric field (in kV/cm) are obtained as
 
-Ex=-1809.0\*elm.psn.getsol(1)
+Ex=-1809.\*elm.psn.getsol(1)
 
-Ey=-1809.0\*elm.psn.getsol(2)-E0
+Ey=-1809.\*elm.psn.getsol(2)-E0
 
 Here E0=52.0 is the background electric field.
 
