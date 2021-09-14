@@ -46,3 +46,8 @@ In addition, the following data are provided in the instance **sol**:
 - sol.Ne_axs - 1D array that contains the electron density at the nodes of sol.y_fld_axs
 - sol.Ni_axs - 1D array that contains the ion density at the nodes of sol.y_fld_axs
 - sol.E_axs - 1D array that contains the axial electric field at the nodes of sol.y_lgn_axs
+
+These results can be quickly visualized using the functons:
+- sol.rho() - plot the distribution of sol.Ne_axs (red) and sol.Ni_axs (blue)
+- sol.rho_log() - the same as sol.rho() but using the logarithmic scale for density.
+- -sol.field() - plot the distribution of sol.E_axs
