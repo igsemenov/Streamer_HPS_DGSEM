@@ -16,7 +16,7 @@ The simulation results can be loaded using the script pycode_sol.py.
 
 The starting point to get the results is the list **hps.elm** that contains the pointers to the block elements.
 
-The computational mesh can be plotted by calling hps.sol().
+The computational mesh can be plotted by calling hps.plot().
 
 Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output data is as follows:
 
