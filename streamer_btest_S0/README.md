@@ -32,3 +32,10 @@ Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output da
  - elm.psn.f[1] - 2D array that contains the derivative of the potential with respect to x at the Gauss nodes
  - elm.psn.f[2] - 2D array that contains the derivative of the potential with respect to y at the Gauss nodes
 
+Using the derivatives of the potential, the components of the electric field (in kV/cm) are obtained as
+
+Ex=-1809.0\*elm.psn.f[1]
+
+Ey=-1809.0\*elm.psn.f[2]-E0
+
+Here E0=-52 is the background electric field.
