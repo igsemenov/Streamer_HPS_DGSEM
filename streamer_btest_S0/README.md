@@ -10,4 +10,6 @@ The simulation steps are as follows:
 
 At the end of the simulation, the folders pydata\time_#, with #=0,1,2,3,4,5, contain the simulation results corresponding to the time moments 0.0, 0.5, 1.0, 1.5, 2.0, 2.5 ns, respectively.
 
+The simulation results can be retrieved using the script pycode_sol.py.
+
 
