@@ -7,7 +7,7 @@ import time
 ###############################################################################
 """
 
-This script simulates the streamer propagation on the time interval 0.5 ns
+This script simulates the streamer propagation on the time interval of 0.5 ns
 
 The initial state is loaded from pydata\time_#, where #=time_moment
 
