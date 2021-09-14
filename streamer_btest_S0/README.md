@@ -14,7 +14,7 @@ The simulation results can be retrieved using the script pycode_sol.py.
 
 The starting point to get the results is the list hps.elm that contains the pointers to the block elements.
 
-Suppose elm=hps.elm[#], where #=0,1,2.... Then the structure of the output data is as follows:
+Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output data is as follows:
 
  - elm.c - coordinates of the block element center
  - elm.h - half-length of the block element side
