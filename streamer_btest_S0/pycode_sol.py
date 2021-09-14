@@ -11,6 +11,15 @@ The variable time_moment defines the required data set.
 
 The data are loaded from pydata\time_#, with #=time_moment.
 
+The corresponding time moments are as follows:
+
+    time_moment=0: t=0.0 ns, initial state
+    time_moment=1: t=0.5 ns
+    time_moment=2: t=1.0 ns
+    time_moment=3: t=1.5 ns
+    time_moment=4: t=2.0 ns
+    time_moment=5: t=2.5 ns
+
 """
 ###############################################################################
 time_moment=0
