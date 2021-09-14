@@ -16,6 +16,8 @@ The simulation results can be loaded using the script pycode_sol.py.
 
 The starting point to get the results is the list **hps.elm** that contains the pointers to the block elements.
 
+The computational mesh can be plotted by calling hps.plot().
+
 Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output data is as follows:
 
  - elm.c - coordinates of the block element center
@@ -47,7 +49,7 @@ In addition, the following data are provided in the instance **sol**:
 - sol.Ni_axs - 1D array that contains the ion density at the nodes of sol.y_fld_axs
 - sol.E_axs - 1D array that contains the axial electric field at the nodes of sol.y_lgn_axs
 
-These results can be quickly visualized using the functions:
+These results can be quickly visualized using the following functions:
 - sol.rho() - plot the distribution of sol.Ne_axs (red) and sol.Ni_axs (blue)
 - sol.rho_log() - the same as sol.rho() but using the logarithmic scale for density.
 - sol.field() - plot the distribution of sol.E_axs
