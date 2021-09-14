@@ -11,7 +11,7 @@ The variable time_moment defines the required data set.
 
 The data are loaded from pydata\time_#, with #=time_moment.
 
-The value of the time_moment corresponds to the physical time in ns.
+The value of time_moment corresponds to the physical time in ns.
 
 For example time_moment=5 corresponds to t=5ns.
 
