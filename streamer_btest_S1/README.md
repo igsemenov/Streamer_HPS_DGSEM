@@ -14,7 +14,7 @@ At the end of the simulation, the folders pydata\time_#, with #=0,1,2,3,4,5, con
 
 The simulation results can be loaded using the script pycode_sol.py.
 
-The computational mesh can be plotted by calling hps.sol().
+The computational mesh can be plotted by calling hps.plot().
 
 The starting point to get the results is the list **hps.elm** that contains the pointers to the block elements.
 
