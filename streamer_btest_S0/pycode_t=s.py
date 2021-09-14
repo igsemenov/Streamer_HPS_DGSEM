@@ -13,6 +13,8 @@ The initial state is loaded from pydata\time_#, where #=time_moment
 
 The computed results are saved to pydata\time_#, where #=time_moment+1
 
+The time_moment can be 0,1,2,3,4
+
 """
 ###############################################################################
 time_moment=4
