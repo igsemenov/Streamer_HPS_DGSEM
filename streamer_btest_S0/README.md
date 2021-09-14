@@ -5,7 +5,7 @@ The scripts must be placed in the same directory. This directory must contain th
 
 The simulation steps are as follows:
 
-1. Run pycode_t=i.py. This script initiales the mesh and the solution at t=0.
+1. Run pycode_t=i.py. This script initializes the mesh and the solution at t=0.
 2. Run pycode_t=s.py sequentially with time_moment=0,1,2,3,4.
 
 At the end of the simulation, the folders pydata\time_#, with #=0,1,2,3,4,5, contain the simulation results corresponding to the time moments 0.0, 0.5, 1.0, 1.5, 2.0, 2.5 ns, respectively.
@@ -16,8 +16,10 @@ The starting point to get the results is the list hps.elm that contains the poin
 
 Suppose elm=hps.elm[#], where #=0,1,2.... Then the structure of the output data is as follows:
 
- - elm.c - 
- - elm.nod_lgn.x - 2D array that contains the x-coordinate of the Gauss nodes within the block element.
- - elm.nod_lgn.y - 2D array that contains the y-coordinate of the Gauss nodes within the block element.
- - elm.fld_fvs.x - 2D array that contains the x-coordinate of the FV mesh nodes within the block element.
- - elm.fld_fvs.y - 2D array that contains the y-coordinate of the FV mesh nodes within the block element.
+ - elm.c - coordinates of the block element center
+ - elm.h - half-length of the block element side
+ - elm.p[2] - the refinement level of the block element 
+ - elm.nod_lgn.x - 2D array that contains the x-coordinate of the Gauss nodes within the block element
+ - elm.nod_lgn.y - 2D array that contains the y-coordinate of the Gauss nodes within the block element
+ - elm.fld_fvs.x - 2D array that contains the x-coordinate of the FV mesh nodes within the block element
+ - elm.fld_fvs.y - 2D array that contains the y-coordinate of the FV mesh nodes within the block element
