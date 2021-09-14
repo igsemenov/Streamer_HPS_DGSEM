@@ -54,16 +54,18 @@ These results can be quickly visualized using the functions:
 
 # Files Overview
 ## pycode_t=i.py
-This script is used to initialize simulations.
+This script is used to initialize the simulation.
 ## pycode_t=s.py
-This script is used to perform simulations steps.
+This script is used to perform the simulations steps.
 ## pycode_sol.py
 This script is used to retrieve the simulation results.
 ## pylib_hps.py
-This script contains the basic utilities of the HPS scheme and the entire simulation procedure.
+This script contains the basic utilities of the HPS scheme and those of the entire simulation procedure.
 ## pyib_dgs.py
-This script contains the basic utilities of the DGSEM scheme
+This script contains the basic utilities of the DGSEM scheme.
 ## pyib_fvs.py
-This script contains the basic utilities of the FV scheme
+This script contains the basic utilities of the FV scheme.
 ## pyib_psn.py
-This script contains the basic utilities of the HPS scheme within a single block element
+This script contains the basic utilities of the HPS scheme within a single block element.
+## pylib_lgn.py
+This script contains the basic utilities for working with the polynomial basis functions.
