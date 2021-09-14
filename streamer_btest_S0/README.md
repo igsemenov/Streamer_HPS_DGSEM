@@ -39,3 +39,7 @@ Ex=-1809.0\*elm.psn.f[1]
 Ey=-1809.0\*elm.psn.f[2]-E0
 
 Here E0=52.0 is the background electric field.
+
+In addition, the following ata are provided in the instance **sol**:
+- sol.y_fld_axs - 1D array of the FV mesh nodes on the axis of symmetry
+- sol.y_lgn_axs - 1D array of the Gauss nodes on the axis of symmetry
