@@ -11,10 +11,16 @@ The simulation steps are as follows:
 At the end of the simulation, the folders pydata\time_#, with #=0,1,2,3,4,5, contain the simulation results.
 
 The results in different folders correspond to different time moments, as indicated below:
+
 pydata\time_0: t=0, initial state
+
 pydata\time_1: t=0.5ns
+
 pydata\time_2: t=1.0ns
+
 pydata\time_3: t=1.5ns
+
 pydata\time_4: t=2.0ns
+
 pydata\time_5: t=2.5ns
 
