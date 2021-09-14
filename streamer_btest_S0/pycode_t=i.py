@@ -6,7 +6,7 @@ from pylib_hps import np
 ###############################################################################
 """
 
-This script initializes the mesh and solution at t=0
+This script initializes the mesh and the solution at t=0
 
 The data are saved to pycode/time_0
 
