@@ -37,7 +37,7 @@ Ex=-1809.\*elm.psn.getsol(1)
 
 Ey=-1809.\*elm.psn.getsol(2)-E0
 
-Here E0=52.0 is the background electric field.
+Here E0=52. is the background electric field.
 
 In addition, the following data are provided in the instance **sol**:
 - sol.y_lgn_axs - 1D array that contains the Gauss nodes on the axis of symmetry
@@ -46,7 +46,7 @@ In addition, the following data are provided in the instance **sol**:
 - sol.E_axs - 1D array that contains the axial electric field at the Gauss nodes on the axis of symmetry
 
 These results can be quickly visualized using the following functions:
-- sol.rho() - plot the distribution of sol.Ne_axs (red) and sol.Ni_axs (blue)
+- sol.rho() - plot the distribution of sol.Ne_axs_dgs (red) and sol.Ni_axs_dgs (blue)
 - sol.rho_log() - the same as sol.rho() but using the logarithmic scale for density.
 - sol.field() - plot the distribution of sol.E_axs
 
