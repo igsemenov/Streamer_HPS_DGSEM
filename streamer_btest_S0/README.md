@@ -12,4 +12,9 @@ At the end of the simulation, the folders pydata\time_#, with #=0,1,2,3,4,5, con
 
 The simulation results can be retrieved using the script pycode_sol.py.
 
-The starting point to get the results is the list **hps.elm** that contains the pointers to the block elements.  
+The starting point to get the results is the list **hps.elm** that contains the pointers to the block elements.
+
+Suppose elm=hps.elm[#], where #=0,1,2.... Then the structure of the output data is as follows:
+
+ 1. elm.nod_lgn.x,elm.nod_lgn.y: 2D arrays that contain the Gauss nodes within the block element.
+ 2. 
