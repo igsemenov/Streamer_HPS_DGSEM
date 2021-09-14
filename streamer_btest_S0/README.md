@@ -53,8 +53,7 @@ These results can be quickly visualized using the functions:
 - sol.field() - plot the distribution of sol.E_axs
 
 # Files Overview
-## pycode_t=i.py
-This script is used to initialize the simulation.
+- pycode_t=i.py  - This script is used to initialize the simulation.
 ## pycode_t=s.py
 This script is used to perform the simulations steps.
 ## pycode_sol.py
