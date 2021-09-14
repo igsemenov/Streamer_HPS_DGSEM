@@ -51,3 +51,19 @@ These results can be quickly visualized using the functions:
 - sol.rho() - plot the distribution of sol.Ne_axs (red) and sol.Ni_axs (blue)
 - sol.rho_log() - the same as sol.rho() but using the logarithmic scale for density.
 - sol.field() - plot the distribution of sol.E_axs
+
+# Files Overview
+## pycode_t=i.py
+This script is used to initialize simulations.
+## pycode_t=s.py
+This script is used to perform simulations steps.
+## pycode_sol.py
+This script is used to retrieve the simulation results.
+## pylib_hps.py
+This script contains the basic utilities of the HPS scheme and the entire simulation procedure.
+## pyib_dgs.py
+This script contains the basic utilities of the DGSEM scheme
+## pyib_fvs.py
+This script contains the basic utilities of the FV scheme
+## pyib_psn.py
+This script contains the basic utilities of the HPS scheme within a single block element
