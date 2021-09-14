@@ -23,16 +23,11 @@ Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output da
  - elm.c - coordinates of the block element center
  - elm.h - half-length of the block element side
  - elm.p[2] - the refinement level of the block element 
- - elm.nod_lgn.x - 2D array that contains the x-coordinate of the Gauss nodes within the block element
- - elm.nod_lgn.y - 2D array that contains the y-coordinate of the Gauss nodes within the block element
- - elm.fld_fvs.x - 2D array that contains the x-coordinate of the FV mesh nodes within the block element
- - elm.fld_fvs.y - 2D array that contains the y-coordinate of the FV mesh nodes within the block element
- - elm.fld_dgs.f[0] - 2D array that contains the electron density at the Gauss nodes
- - elm.fld_dgs.f[2] - 2D array that contains the ion density at the Gauss nodes
- - elm.fld_fvs.f[0] - 2D array that contains the electron density at the FV mesh nodes
- - elm.fld_fvs.f[2] - 2D array that contains the ion density at the FV mesh nodes
- - elm.psn.f[1] - 2D array that contains the derivative of the potential with respect to x at the Gauss nodes
- - elm.psn.f[2] - 2D array that contains the derivative of the potential with respect to y at the Gauss nodes
+ - elm.nod_lgn.getmsh() - tuple (x,y), where x,y are 2D arrays that contain the coordinates of the Gauss nodes within the block element
+ - elm.fld_dgs.getsol(0) - 2D array that contains the electron density at the Gauss nodes
+ - elm.fld_dgs.getsol(2) - 2D array that contains the ion density at the Gauss nodes
+ - elm.psn.getsol(1) - 2D array that contains the derivative of the potential with respect to x at the Gauss nodes
+ - elm.psn.getsol(2) - 2D array that contains the derivative of the potential with respect to y at the Gauss nodes
 
 Using the derivatives of the potential, the corresponding components of the electric field (in kV/cm) are obtained as
 
