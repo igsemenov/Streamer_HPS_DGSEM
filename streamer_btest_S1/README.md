@@ -14,41 +14,7 @@ After that, the folders pydata\time_#, with #=0,1,2,3,4,5, contain the simulatio
 
 # Retrieving the simulation results
 
-The simulation results can be loaded using the script pycode_sol.py.
-
-The starting point to get the results is the list **hps.elm** that contains the pointers to the block elements.
-
-The computational mesh can be plotted by calling hps.plot().
-
-Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output data is as follows:
-
- - elm.c - coordinates of the block element center
- - elm.h - half-length of the block element side
- - elm.p[2] - the refinement level of the block element 
- - elm.nod_lgn.getmsh() - tuple (x,y), where x,y are 2D arrays that contain the coordinates of the Gauss nodes within the block element
- - elm.fld_dgs.getsol(0) - 2D array that contains the electron density at the Gauss nodes
- - elm.fld_dgs.getsol(2) - 2D array that contains the ion density at the Gauss nodes
- - elm.psn.getsol(1) - 2D array that contains the derivative of the potential with respect to x at the Gauss nodes
- - elm.psn.getsol(2) - 2D array that contains the derivative of the potential with respect to y at the Gauss nodes
-
-Using the derivatives of the potential, the corresponding components of the electric field (in kV/cm) are obtained as
-
-Ex=-1809.\*elm.psn.getsol(1)
-
-Ey=-1809.\*elm.psn.getsol(2)-E0
-
-Here E0=52.0 is the background electric field.
-
-In addition, the following data are provided in the instance **sol**:
-- sol.y_lgn_axs - 1D array that contains the Gauss nodes on the axis of symmetry
-- sol.Ne_axs_dgs - 1D array that contains the electron density at the Gauss nodes on the axis of symmetry
-- sol.Ni_axs_dgs - 1D array that contains the ion density at the Gauss nodes on the axis of symmetry
-- sol.E_axs - 1D array that contains the axial electric field at the Gauss nodes on the axis of symmetry
-
-These results can be quickly visualized using the following functions:
-- sol.rho() - plot the distribution of sol.Ne_axs (red) and sol.Ni_axs (blue)
-- sol.rho_log() - the same as sol.rho() but using the logarithmic scale for density.
-- sol.field() - plot the distribution of sol.E_axs
+See README.md in streamer_btest_S0
 
 # Files Overview
 ## pycode_t=i.py
