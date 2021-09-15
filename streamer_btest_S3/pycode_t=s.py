@@ -9,7 +9,7 @@ import time
 
 This script simulates the streamer propagation on the time interval of 0.5 ns
 
-The initial state is loaded from pydata\time_#, where #=time_moment
+The starting state is loaded from pydata\time_#, where #=time_moment
 
 The computed results are saved to pydata\time_#, where #=time_moment+1
 
