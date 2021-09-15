@@ -48,18 +48,15 @@ class sol:
         self.h_axs=None
 
     def rho(self):
-        plt.plot(self.y_lgn_axs,self.Ne_axs_dgs,"r-")
-        plt.plot(self.y_lgn_axs,self.Ni_axs_dgs,"b-")
+        plt.plot(self.y_axs,self.Ne_axs,"r-")
+        plt.plot(self.y_axs,self.Ni_axs,"b-")
 
     def rho_log(self):
-        plt.semilogy(self.y_lgn_axs,self.Ne_axs_dgs,"r-")
-        plt.semilogy(self.y_lgn_axs,self.Ni_axs_dgs,"b-")
+        plt.semilogy(self.y_axs,self.Ne_axs,"r-")
+        plt.semilogy(self.y_axs,self.Ni_axs,"b-")
 
     def field(self):
-        plt.plot(self.y_lgn_axs,self.E_axs,"-b")
-
-    def phi(self):
-        plt.plot(self.y_lgn_axs,self.U_axs,"-b")
+        plt.plot(self.y_axs,self.E_axs,"-b")
 
     def plot2d(self,dat):
 
@@ -689,9 +686,6 @@ class unit:
 
                 i,j=np.meshgrid(i,j)
 
-#                Ne=fvs.g2f(elm.fld_dgs.f[0])
-#                Ni=fvs.g2f(elm.fld_dgs.f[2])
-
                 Ne=elm.fld_fvs.f[0]
                 Ni=elm.fld_fvs.f[2]
 
@@ -719,71 +713,34 @@ class unit:
 
         sol.E=np.sqrt(sol.Ex*sol.Ex+sol.Ey*sol.Ey)
 
-        sol.h_axs=[]
+        sol.y_axs=[]
 
-        sol.y_fld_axs=[]
-        sol.y_lgn_axs=[]
-
-        sol.Ne_axs_fld=[]
-        sol.Ni_axs_fld=[]
-
-        sol.Ne_axs_dgs=[]
-        sol.Ni_axs_dgs=[]
+        sol.Ne_axs=[]
+        sol.Ni_axs=[]
 
         sol.E_axs=[]
-        sol.U_axs=[]
-
-        n=lgn.lgn.n
 
         for j in self.brd[3]:
 
             elm=self.elm[j]            
 
-            sol.h_axs.append(elm.h[1])
+            sol.y_axs.append(elm.fld_fvs.y[:,0])
 
-            sol.y_fld_axs.append(elm.fld_fvs.y[:,0])
+            sol.Ne_axs.append(elm.fld_fvs.f[0][:,0])
+            sol.Ni_axs.append(elm.fld_fvs.f[2][:,0])
 
-            sol.Ne_axs_fld.append(elm.fld_fvs.f[0][:,0])
-            sol.Ni_axs_fld.append(elm.fld_fvs.f[2][:,0])
+            E=fvs.g2f(elm.psn.f[2])
 
-            x,y=elm.nod_lgn.getmsh()
+            E=-1809.*E[:,0]-52.
 
-            sol.y_lgn_axs.append(y[:,0])
-
-            Ne=elm.fld_dgs.getsol(0)
-            Ni=elm.fld_dgs.getsol(2)
-
-            Ne=np.sum(lgn.lgn.Pa*Ne[:,0:n],1)
-            Ni=np.sum(lgn.lgn.Pa*Ni[:,0:n],1)
-
-            sol.Ne_axs_dgs.append(Ne)
-            sol.Ni_axs_dgs.append(Ni)
-
-            U=elm.psn.getsol(0)
-            E=elm.psn.getsol(2)
-
-            U=np.sum(lgn.lgn.Pa*U[:,0:n],1)
-            E=np.sum(lgn.lgn.Pa*E[:,0:n],1)
-
-            E=-1809.*E-52.
-
-            sol.U_axs.append(U)
             sol.E_axs.append(E)
 
-        sol.y_fld_axs=np.hstack(sol.y_fld_axs)
+        sol.y_axs=np.hstack(sol.y_axs)
 
-        sol.Ne_axs_fld=np.hstack(sol.Ne_axs_fld)
-        sol.Ni_axs_fld=np.hstack(sol.Ni_axs_fld)
-
-        sol.Ne_axs_dgs=np.hstack(sol.Ne_axs_dgs)
-        sol.Ni_axs_dgs=np.hstack(sol.Ni_axs_dgs)
-
-        sol.y_lgn_axs=np.hstack(sol.y_lgn_axs)
+        sol.Ne_axs=np.hstack(sol.Ne_axs)
+        sol.Ni_axs=np.hstack(sol.Ni_axs)
 
         sol.E_axs=np.hstack(sol.E_axs)
-        sol.U_axs=np.hstack(sol.U_axs)
-
-        sol.h_axs=np.repeat(np.hstack(sol.h_axs),lgn.m[0])/lgn.m[0]
 
         return self.sol
 
