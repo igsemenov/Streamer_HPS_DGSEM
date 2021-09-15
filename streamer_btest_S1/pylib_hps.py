@@ -68,7 +68,7 @@ class sol:
         plt.contourf(+self.x,self.y,dat,levels=lev,cmap="jet")
         plt.contourf(-self.x,self.y,dat,levels=lev,cmap="jet")
 
-#        plt.axis("equal")
+        plt.axis("equal")
 
 ###############################################################################
 #   class unit
