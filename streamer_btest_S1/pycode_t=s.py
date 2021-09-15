@@ -17,7 +17,7 @@ The time_moment can be 0,1,2,3,4
 
 """
 ###############################################################################
-time_moment=4
+time_moment=0
 #------------------------------------------------------------------------------
 dt=2e-3
 mt=5
@@ -78,7 +78,7 @@ tic=time.time()
 
 for s in range(nt):
 
-    print("step: "+str(s+1))
+    print("s="+str(s+1))
     hps.step_dgs_fvs(dt,mt,dgs,fvs,lgn)
 
     hps.top.geteps(hps.top)
