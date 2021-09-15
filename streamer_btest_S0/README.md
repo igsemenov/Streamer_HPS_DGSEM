@@ -5,6 +5,8 @@ The scripts must be placed in the same working directory.
 
 The working directory must contain the folder pydata that includes the subfolders time_#, where #=0,1,2,3,4,5.
 
+These folders can be created by running the script pycode_dir.py.
+
 The simulation steps are as follows:
 
 1. Run pycode_t=i.py. This script initializes the mesh and the solution at t=0.
@@ -61,6 +63,8 @@ This script is used to initialize the simulation.
 This script is used to perform the simulations steps.
 ## pycode_sol.py
 This script is used to retrieve the simulation results.
+## pycode_dir.py
+This script can be used to create folder pydata (including required subfolders).
 ## pylib_hps.py
 This script contains the basic utilities of the HPS scheme and those of the entire simulation procedure.
 ## pyib_dgs.py
