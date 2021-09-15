@@ -30,6 +30,10 @@ Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output da
  - elm.fld_dgs.getsol(2) - 2D array that contains the ion density at the Gauss nodes
  - elm.psn.getsol(1) - 2D array that contains the derivative of the potential with respect to x at the Gauss nodes
  - elm.psn.getsol(2) - 2D array that contains the derivative of the potential with respect to y at the Gauss nodes
+ - elm.fld_fvs.x - 2D array that contains the x-coordinate of the FV mesh nodes
+ - elm.fld_fvs.y - 2D array that contains the y-coordinate of the FV mesh nodes
+ - elm.fld_fvs.f[0] - 2D array that contains the electron density at the FV mesh nodes
+ - elm.fld_fvs.f[2] - 2D array that contains the electron density at the FV mesh nodes
 
 Using the derivatives of the potential, the corresponding components of the electric field (in kV/cm) are obtained as
 
@@ -40,13 +44,13 @@ Ey=-1809.\*elm.psn.getsol(2)-E0
 Here E0=52. is the background electric field.
 
 In addition, the following data are provided in the instance **sol**:
-- sol.y_lgn_axs - 1D array that contains the Gauss nodes on the axis of symmetry
-- sol.Ne_axs_dgs - 1D array that contains the electron density at the Gauss nodes on the axis of symmetry
-- sol.Ni_axs_dgs - 1D array that contains the ion density at the Gauss nodes on the axis of symmetry
-- sol.E_axs - 1D array that contains the axial electric field at the Gauss nodes on the axis of symmetry
+- sol.y_axs - 1D array that contains the FV mesh nodes on the axis of symmetry
+- sol.Ne_axs - 1D array that contains the electron density at the FV mesh nodes on the axis of symmetry
+- sol.Ni_axs - 1D array that contains the ion density at the FV mesh nodes on the axis of symmetry
+- sol.E_axs - 1D array that contains the axial electric field at the FV mesh nodes on the axis of symmetry
 
 These results can be quickly visualized using the following functions:
-- sol.rho() - plot the distribution of sol.Ne_axs_dgs (red) and sol.Ni_axs_dgs (blue)
+- sol.rho() - plot the distribution of sol.Ne_axs (red) and sol.Ni_axs (blue)
 - sol.rho_log() - the same as sol.rho() but using the logarithmic scale for density.
 - sol.field() - plot the distribution of sol.E_axs
 
