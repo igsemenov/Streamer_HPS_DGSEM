@@ -712,7 +712,7 @@ class unit:
                 if elm.psn:                    
 
                     Ex=-1809.*elm.psn.f[1]
-                    Ey=-1809.*elm.psn.f[2]-52.
+                    Ey=-1809.*elm.psn.f[2]-15.
 
                     Ex=fvs.g2f(Ex)
                     Ey=fvs.g2f(Ey)
