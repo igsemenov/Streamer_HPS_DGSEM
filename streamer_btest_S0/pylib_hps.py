@@ -733,6 +733,8 @@ class unit:
         sol.E_axs=[]
         sol.U_axs=[]
 
+        n=lgn.lgn.n
+
         for j in self.brd[3]:
 
             elm=self.elm[j]            
@@ -751,8 +753,8 @@ class unit:
             Ne=elm.fld_dgs.getsol(0)
             Ni=elm.fld_dgs.getsol(2)
 
-            Ne=np.sum(lgn.lgn.Pa*Ne[:,0:6],1)
-            Ni=np.sum(lgn.lgn.Pa*Ni[:,0:6],1)
+            Ne=np.sum(lgn.lgn.Pa*Ne[:,0:n],1)
+            Ni=np.sum(lgn.lgn.Pa*Ni[:,0:n],1)
 
             sol.Ne_axs_dgs.append(Ne)
             sol.Ni_axs_dgs.append(Ni)
@@ -760,8 +762,8 @@ class unit:
             U=elm.psn.getsol(0)
             E=elm.psn.getsol(2)
 
-            U=np.sum(lgn.lgn.Pa*U[:,0:6],1)
-            E=np.sum(lgn.lgn.Pa*E[:,0:6],1)
+            U=np.sum(lgn.lgn.Pa*U[:,0:n],1)
+            E=np.sum(lgn.lgn.Pa*E[:,0:n],1)
 
             E=-1809.*E-52.
 
