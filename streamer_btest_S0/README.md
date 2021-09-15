@@ -33,7 +33,7 @@ Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output da
  - elm.fld_fvs.x - 2D array that contains the x-coordinate of the FV mesh nodes
  - elm.fld_fvs.y - 2D array that contains the y-coordinate of the FV mesh nodes
  - elm.fld_fvs.f[0] - 2D array that contains the electron density at the FV mesh nodes
- - elm.fld_fvs.f[2] - 2D array that contains the electron density at the FV mesh nodes
+ - elm.fld_fvs.f[2] - 2D array that contains the ion density at the FV mesh nodes
 
 Using the derivatives of the potential, the corresponding components of the electric field (in kV/cm) are obtained as
 
