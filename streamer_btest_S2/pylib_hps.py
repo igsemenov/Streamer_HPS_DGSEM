@@ -1595,8 +1595,8 @@ class knot:
         x=np.array([cx-hx,cx+hx,cx+hx,cx-hx,cx-hx])
         y=np.array([cy-hy,cy-hy,cy+hy,cy+hy,cy-hy])
 
-        plt.plot(x,y,"-b")
+        plt.plot(x,y,"-k")
 
-        plt.text(cx,cy,str(self.j))
+#        plt.text(cx,cy,str(self.j))
 
 ###############################################################################
