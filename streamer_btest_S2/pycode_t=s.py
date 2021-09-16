@@ -105,6 +105,6 @@ hps.step_psn(lgn)
 
 sol=hps.getsol(4,lgn,fvs)
 
-#hps.save("pydata\\time_"+str(time_moment+1))
+hps.save("pydata\\time_"+str(time_moment+1))
 
 ###############################################################################
