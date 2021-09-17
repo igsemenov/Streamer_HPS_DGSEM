@@ -14,6 +14,13 @@ The simulation steps are as follows:
 
 Folders pydata\time_# contain the results corresponding to the time moments 0.0, 0.5, 1.0, 1.5, 2.0, 2.5 ns, respectively.
 
+**The units for physical quantities are as follows:**
+ - time: 1 ns
+ - length: 1e-4 m
+ - density: 1e20 1/m3
+ - field: 1 kV/cm
+ - potential: 1 kV
+
 # Retrieving the simulation results
 
 The simulation results can be loaded using the script pycode_sol.py.
@@ -37,7 +44,7 @@ Suppose elm=hps.elm[#], where #=0,1,2,3,.... Then the structure of the output da
  - elm.fld_fvs.f[0] - 2D array that contains the electron density at the FV mesh nodes
  - elm.fld_fvs.f[2] - 2D array that contains the ion density at the FV mesh nodes
 
-Using the derivatives of the potential, the corresponding components of the electric field (in kV/cm) are obtained as
+Using the derivatives of the potential, the corresponding components of the electric field are obtained as
 
 Ex=-1809.\*elm.psn.getsol(1)
 
