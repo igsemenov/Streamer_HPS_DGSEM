@@ -71,6 +71,8 @@ This script is used to initialize the simulation.
 This script is used to perform the simulations steps.
 ## pycode_sol.py
 This script is used to retrieve the simulation results.
+## pycode_dir.py
+This script can be used to create the folder pydata (including the required subfolders).
 ## pylib_hps.py
 This script contains the basic utilities of the HPS scheme and those of the entire simulation procedure.
 ## pyib_dgs.py
