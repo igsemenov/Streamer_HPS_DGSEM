@@ -18,3 +18,6 @@ The code is written in the Python programming language (Python 2.7.16 was used).
  - **test_fvs** - the code used to test the FV scheme (results are not presented in the paper).
  - **test_hps_a=0** - the code used to test the HPS scheme (problem in Cartesian coordinates). The results are presented in the Appendix C.
  - **test_hps_a=1** - the code used to test the HPS scheme (axisymmetric problem). The results are presented in the Appendix C.
+ - **test_projection** - the code used to test the projection procedure described in Section 3.5.1.
+ - **test_spectral_scheme** - the code used to test the spectral discretization method for the Poisson equation. The results are presented in the Appendix B.
+
