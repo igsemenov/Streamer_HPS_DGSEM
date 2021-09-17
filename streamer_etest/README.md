@@ -1,14 +1,22 @@
 # Introduction
+
 This folder contains the scripts used to perform the simulation described in **Section 4.2**. 
 
-The scripts must be placed in the same directory. This directory must contain the folder pydata that includes the subfolders time_#, with #=0,...,16.
+The scripts must be placed in the same directory. This directory must contain the folder pydata that includes the subfolders time_#, where #=0,...,16.
 
 The simulation steps are as follows:
 
 1. Run pycode_t=i.py. This script initializes the mesh and the solution at t=0.
 2. Run pycode_t=s.py sequentially with time_moment=0,...,15.
 
-At the end of the simulation, the folders pydata\time_#, with #=0,...,16, contain the simulation results corresponding to the time moments from 0 to 16 ns, respectively.
+Folders pydata\time_# contain the simulation results corresponding to the time moments from 0 to 16 ns, respectively.
+
+**The units for physical quantities are as follows:**
+ - time: 1 ns
+ - length: 1e-4 m
+ - density: 1e20 1/m3
+ - field: 1 kV/cm
+ - potential: 1 kV
 
 # Retrieving the simulation results
 
