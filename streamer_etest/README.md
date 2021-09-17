@@ -15,8 +15,8 @@ Folders pydata\time_# contain the simulation results corresponding to the time m
  - time: 1 ns
  - length: 1e-4 m
  - density: 1e20 1/m3
- - field: 1 kV/cm
- - potential: 1 kV
+ - electric field: 1 kV/cm
+ - electric potential: 1 kV
 
 # Retrieving the simulation results
 
