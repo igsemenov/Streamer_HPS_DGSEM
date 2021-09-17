@@ -6,6 +6,8 @@ The scripts must be placed in the same directory.
 
 This directory must contain the folder pydata that includes the subfolders time_#, where #=0,...,16.
 
+These folders can be created by running the script pycode_dir.py.
+
 The simulation steps are as follows:
 
 1. Run pycode_t=i.py. This script initializes the mesh and the solution at t=0.
