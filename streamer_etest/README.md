@@ -2,7 +2,9 @@
 
 This folder contains the scripts used to perform the simulation described in **Section 4.2**. 
 
-The scripts must be placed in the same directory. This directory must contain the folder pydata that includes the subfolders time_#, where #=0,...,16.
+The scripts must be placed in the same directory.
+
+This directory must contain the folder pydata that includes the subfolders time_#, where #=0,...,16.
 
 The simulation steps are as follows:
 
