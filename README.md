@@ -6,6 +6,13 @@ This folder contains the computer code that was used to perform the numerical ex
 
 The code is written in the Python programming language (Python 2.7.16 was used).
 
+In what follows, citations and references correspond to those of the paper.
+
+The frequently used abbreviations are:
+ - **DGSEM** - discontinious Galerkin spectral element method
+ - **FV** - finite volume
+ - **HPS** - the Hierarchical Poincare-Steklov scheme
+
 **Overview of the subfolders:**
  - **streamer_btest_S0** - the code used for the simulation S0 described in Section 4.1.
  - **streamer_btest_S1** - the code used for the simulation S1 described in Section 4.1.
