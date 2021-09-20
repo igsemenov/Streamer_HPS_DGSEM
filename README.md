@@ -6,7 +6,7 @@ This folder contains the computer code that was used to perform the numerical ex
 
 The code is written in the Python programming language (Python 2.7.16 was used).
 
-**Disclaimer.** The code is documented only briefly. The code structure and style are based on the gut instinct of the author (no specific standards of guidelines were used). Further efforts to improve the code quality were not undertaken due to limited project time.
+**Disclaimer.** The code is documented only briefly. The code structure and style are based on the gut instinct of the author (no specific standards or guidelines were used). Further efforts to improve the code quality were not undertaken due to limited project time.
 
 In what follows, all notations and references correspond to those of the paper.
 
