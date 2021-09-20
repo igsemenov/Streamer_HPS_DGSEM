@@ -30,4 +30,4 @@ The frequently used abbreviations are:
  - **test_projection** - the code used to test the projection procedure described in Section 3.5.1.
  - **test_spectral_scheme** - the code used to test the spectral scheme for the Poisson equation. The results are presented in the Appendix B.
 
-For further details see the corresponding README.md files in each subfolder.
+For further details see the corresponding README files in each subfolder.
