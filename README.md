@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains the computer code that was used to perform numerical experiments presented in the following paper:
+This repository contains the source code that was used to perform numerical experiments presented in the following paper:
 
 **I. L. Semenov, K.-D. Weltmann <br/>
 "A spectral element method for modelling streamer discharges in low-temperature atmospheric-pressure plasmas"**
