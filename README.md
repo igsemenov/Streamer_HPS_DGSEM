@@ -1,6 +1,6 @@
 # Introduction
 
-This repository contains the source code that accompanies the following paper:
+This repository contains the source code accompanying the following paper:
 
 **I. L. Semenov, K.-D. Weltmann "A spectral element method for modelling streamer discharges in low-temperature atmospheric-pressure plasmas"**
 
