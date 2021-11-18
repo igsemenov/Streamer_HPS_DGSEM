@@ -22,7 +22,7 @@ The frequently used abbreviations are:
  - **streamer_etest** - the code used for the simulation described in Section 4.2.
  - **test_dgs** - the code used to test the DGSEM scheme.
  - **test_dgs_flux** - the code used to test the numerical flux function for the DGSEM. The results are presented in the Appendix D.
- - **test_fvs** - the code used to test the FV scheme (results are not presented in the paper).
+ - **test_fvs** - the code used to test the FV scheme.
  - **test_hps_a=0** - the code used to test the HPS scheme (problem in Cartesian coordinates). The results are presented in the Appendix C.
  - **test_hps_a=1** - the code used to test the HPS scheme (axisymmetric problem). The results are presented in the Appendix C.
  - **test_projection** - the code used to test the projection procedure described in Section 3.5.1.
