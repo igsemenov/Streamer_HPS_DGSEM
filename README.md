@@ -2,7 +2,8 @@
 
 This repository contains the source code accompanying the following paper:
 
-**I. L. Semenov, K.-D. Weltmann "A spectral element method for modelling streamer discharges in low-temperature atmospheric-pressure plasmas"**, https://arxiv.org/abs/2111.06210
+**I. L. Semenov, K.-D. Weltmann "A spectral element method for modelling streamer discharges in low-temperature atmospheric-pressure plasmas", 
+Journal of Computational Physics 465 (2022) 111378,** https://doi.org/10.1016/j.jcp.2022.111378
 
 The code is written in the Python programming language (Python 2.7.16 was used).
 
