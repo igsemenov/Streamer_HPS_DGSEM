@@ -7,6 +7,6 @@ import os
 os.mkdir("pydata")
 
 for i in range(6):
-    os.mkdir("pydata\\time_"+str(i))
+    os.mkdir("pydata//time_"+str(i))
 
 ###############################################################################
