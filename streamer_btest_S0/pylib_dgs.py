@@ -20,16 +20,16 @@ class dgs_edg:
 
     def refine(self,edg,dgs,p1,p2):
 
-        np.matmul(dgs.T[p1],self.f,out=edg.f[:,0::2])
-        np.matmul(dgs.T[p2],self.f,out=edg.f[:,1::2])
+        edg.f[:,0::2] = np.matmul(dgs.T[p1],self.f)
+        edg.f[:,1::2] = np.matmul(dgs.T[p2],self.f)
 
-        np.matmul(dgs.T1,self.a,out=edg.a[:,0::2])
-        np.matmul(dgs.T2,self.a,out=edg.a[:,1::2])
+        edg.a[:,0::2] = np.matmul(dgs.T1,self.a)
+        edg.a[:,1::2] = np.matmul(dgs.T2,self.a)
 
-        np.matmul(dgs.T1,self.b,out=edg.b[:,0::2])
-        np.matmul(dgs.T2,self.b,out=edg.b[:,1::2])
+        edg.b[:,0::2] = np.matmul(dgs.T1,self.b)
+        edg.b[:,1::2] = np.matmul(dgs.T2,self.b)
 
-        np.multiply(2.,edg.b,out=edg.b)
+        edg.b = 2. * edg.b
 
     def split(self,edg1,edg2):
 
@@ -53,10 +53,10 @@ class dgs_edg:
 
     def flux(self,edg,dgs):
 
-        np.matmul(dgs.K1,edg.F[:,0::2],out=edg.F[:,0::2])
-        np.matmul(dgs.K2,edg.F[:,1::2],out=edg.F[:,1::2])
+        edg.F[:,0::2] = np.matmul(dgs.K1,edg.F[:,0::2])
+        edg.F[:,1::2] = np.matmul(dgs.K2,edg.F[:,1::2])
 
-        np.add(edg.F[:,0::2],edg.F[:,1::2],out=self.F)
+        self.F = edg.F[:,0::2] + edg.F[:,1::2]
 
 ###############################################################################
 class dgs_rib:
