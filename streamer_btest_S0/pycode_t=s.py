@@ -9,9 +9,9 @@ import time
 
 This script simulates the streamer propagation on the time interval of 0.5 ns
 
-The starting state is loaded from pydata\time_#, where #=time_moment
+The starting state is loaded from pydata//time_#, where #=time_moment
 
-The computed results are saved to pydata\time_#, where #=time_moment+1
+The computed results are saved to pydata//time_#, where #=time_moment+1
 
 The time_moment can be 0,1,2,3,4
 
@@ -29,9 +29,9 @@ fvs=hp.lg.fvs2d(lgn)
 dgs=hp.lg.dgs2d(lgn)
 grn=hp.lg.elm2d(lgn)
 
-path="pydata/time_"+str(time_moment)
+path="pydata//time_"+str(time_moment)
 
-hps=hp.pickle.load(open(path+"/hps.bin"))
+hps=hp.pickle.load(open(path+"//hps.bin"))
 
 hps.load(path,dgs,fvs,lgn)
 
@@ -59,6 +59,6 @@ hps.step_psn(lgn)
 
 sol=hps.getsol(4,lgn,fvs)
 
-hps.save("pydata\\time_"+str(time_moment+1))
+hps.save("pydata//time_"+str(time_moment+1))
 
 ###############################################################################
